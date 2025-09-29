@@ -1,6 +1,7 @@
 const { app, BrowserWindow, Tray, Menu, ipcMain, Notification } = require('electron');
 const path = require('path');
 const isDev = process.env.NODE_ENV === 'development';
+require('dotenv').config();
 
 let mainWindow;
 let tray;
